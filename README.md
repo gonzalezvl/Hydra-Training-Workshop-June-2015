@@ -7,11 +7,15 @@ This repository contains practicals and data files to be used in conjunction wit
 
 For the `MORNING`of Day 1 you will be using the following files:
 
-	1. TO BE ADDED - LINK TO FILE
+	1. Day1_AM_Practical (.md or .pdf)
 	2. sequences.fa
+	3. sequences.fq
 
 
 For the `AFTERNOON` of Day 1 you will be using the following files:
 
-	1.	Day1_PM_Practical (.md or .pdf)
+	1. Day1_PM_Practical (.md or .pdf)
 	2. sequences.fa
+
+	
+
