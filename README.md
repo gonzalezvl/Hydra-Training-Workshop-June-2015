@@ -18,4 +18,10 @@ For the `AFTERNOON` of Day 1 you will be using the following files:
 	2. sequences.fa
 
 	
+Additional Documents:
 
+	1. Cheat sheet one: Basic Shell, Navigating Hydra & Job Monitoring
+	2. Cheat sheet two: Text manipulation and scripting & Regex special characters
+	
+	
+Smithsonian Hydra Workshop 2015
