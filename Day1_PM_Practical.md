@@ -2,7 +2,7 @@
 
 
 ##To begin:
-After loging into Hydra, navigate to the directory you created this morning at `/pool/cluster0/workshop/<username>` directory
+After logging into Hydra, navigate to the directory you created this morning at `/pool/cluster0/workshop/<username>`
 
 *Hint: Day 1 AM Practical Step 3*
 
