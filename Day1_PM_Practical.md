@@ -47,7 +47,7 @@ After logging into Hydra, navigate to the directory you created this morning at 
 	
 - Clean up a fasta file so only first column of the header is outputted:
 
-	`awk '{print $1}' sequences.fa > output_awk.fa`
+	`awk '{print $1}' outfile_sed.fa > output_awk.fa`
 
 ### 2. Working with FASTA files
 
@@ -99,7 +99,7 @@ Show the content of a tar archive:`tar -tvf new_tar_archive.tar`
 Unpack a tar archive:`tar -xvf tar_archive.tar`
 
 - **Exercise: unpack a tar archive;**
-	- `tar -cvf sequences.tar`
+	- `tar -xvf sequences.tar`
 
 > B. gzip: compress files
 
