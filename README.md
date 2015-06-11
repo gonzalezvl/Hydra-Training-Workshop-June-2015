@@ -20,8 +20,9 @@ For the `AFTERNOON` of Day 1 you will be using the following files:
 	
 Additional Documents:
 
-	1. Cheat sheet one: Basic Shell, Navigating Hydra & Job Monitoring
-	2. Cheat sheet two: Text manipulation and scripting & Regex special characters
+	1. Day 1 AM Slides by Matt Kweskin
+	2. Cheat sheet one: Basic Shell, Navigating Hydra & Job Monitoring
+	3. Cheat sheet two: Text manipulation and scripting & Regex special characters
 	
 	
 Smithsonian Hydra Workshop 2015
