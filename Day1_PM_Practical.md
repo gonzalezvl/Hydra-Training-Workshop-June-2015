@@ -33,7 +33,7 @@ After logging into Hydra, navigate to the directory you created this morning at 
 		- `grep -C 5 '<searchterm>' <filename>` (5 lines of Context)
 		- Combinations are possible: `grep -A 1 -B 2 '<searchterm>' <filename>` (1 line After, 2 lines Before the hit)
 
-> 	B. Output redirection: > (write to file)- `grep 'Contig' sequences.fa > selection.fa`􏰀Creates a file,if it does not exists.􏰀Writes the output into the file.*Caution: existing content will be overwritten. Do not write to the same file that you read from.*
+> 	B. Output redirection: > (write to file)- `grep 'Contig' sequences.fa > selection.fa`􏰀Creates a file,if it does not exists.􏰀Writes the output into the file. *Caution: existing content will be overwritten. Do not write to the same file that you read from.*
 
 - `grep 'Contig' sequences.fa >> selection.fa`􏰀Creates a file, if it does not exists.􏰀Appends the output to the end of thef ile.􏰀Existing content is not overwritten. Rather, the file grows. (You should still not write to the same file that you read from.)
 
