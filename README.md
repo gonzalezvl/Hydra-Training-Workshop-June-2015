@@ -5,6 +5,7 @@ Training documents and Files for the Smithsonian Hydra Training Workshop held Ju
 
 This repository contains practicals and data files to be used in conjunction with the SIBG sponsored HPC training.
 
+### In Day1 
 For the `MORNING`of Day 1 you will be using the following files:
 
 	1. Day1_AM_Practical (.md or .pdf)
@@ -24,6 +25,11 @@ Additional Documents:
 	2. Day 1 PM Slides by Rebecca Dikow
 	3. Cheat sheet one: Basic Shell, Navigating Hydra & Job Monitoring
 	4. Cheat sheet two: Text manipulation and scripting & Regex special characters
-	
+
+### In Day2
+
+	1. Day 2 AM Slides by Paul Frandsen
+	2. Day 2 PM Slides by Rebecca Dikow
+	3. Day 2 PM Practical
 	
 Smithsonian Hydra Workshop 2015
