@@ -2,7 +2,7 @@
 
 
 ##How to begin
-Copy the Day2 directory in /pool/cluster0/workshop/Hydra\_workshop\_2015/Day2/ to your working directory in /pool/cluster0/workshop/username/. 
+Copy the Day2 directory in /pool/cluster0/workshop/Hydra\_workshop\_2015/Day2/ to your working directory in /pool/cluster0/workshop/username/ 
 
 ##Running jobs on Hydra
 
