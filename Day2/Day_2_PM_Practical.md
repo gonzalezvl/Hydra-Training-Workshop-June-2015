@@ -27,7 +27,7 @@ A. Generate a qsub file to run your data through FastQC
 		#$ -N FastQC
 		#$ -o FastQC.log
 		#$ -m abe
-		#$ -M gonzalezv@si.edu
+		#$ -M gonzalez@si.edu
 		#
 		# ----------------Modules------------------------- #
 		module load bioinformatics/fastqc/0.10.1
@@ -75,7 +75,7 @@ A. Generate a qsub file to run your data through FastQC
 		#$ -N Trimgalore
 		#$ -o Trimgalore.log
 		#$ -m abe
-		#$ -M gonzalezv@si.edu
+		#$ -M gonzalez@si.edu
 		#
 		# ----------------Modules------------------------- #
 		module load bioinformatics/trimgalore/0.4.0
@@ -124,7 +124,7 @@ A. Generate a qsub file to assemble your data (sequences.fq) with `velveth`. `ve
 			#$ -N velveth_short
 			#$ -o velveth_short.log
 			#$ -m abe
-			#$ -M gonzalezv@si.edu
+			#$ -M gonzalez@si.edu
 			#
 			# ----------------Modules------------------------- #
 			module load bioinformatics/velvet/1.2.10
@@ -161,7 +161,7 @@ A. Generate a qsub file to assemble your data (sequences.fq) with `velveth`. `ve
 			#$ -N velvetg_short
 			#$ -o velvetg_short.log
 			#$ -m abe
-			#$ -M gonzalezv@si.edu
+			#$ -M gonzalez@si.edu
 			#
 			# ----------------Modules------------------------- #
 			module load bioinformatics/velvet/1.2.10
