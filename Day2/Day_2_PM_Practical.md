@@ -207,7 +207,7 @@ A. Generate a qsub file to assemble your data with Trinity.
 
 - Qsub generator commands:
 
-		Trinity --seqType fq --single sequences.fa --CPU $NSLOTS --max_memory 20G --full_cleanup --output Trinity_sequences			
+		Trinity --seqType fq --single sequences.fq --CPU $NSLOTS --max_memory 20G --full_cleanup --output Trinity_sequences			
 B. Run Trinity on Hydra-3
 	
 C.	Count the number of sequences in your output assembly - `Trinity.fasta`
