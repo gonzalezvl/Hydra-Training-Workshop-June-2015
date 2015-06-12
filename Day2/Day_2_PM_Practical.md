@@ -140,13 +140,19 @@ A. Generate a qsub file to assemble your data (sequences.fq) with `velveth`. `ve
 			#
 			echo = `date` job $JOB_NAME done
 
-	- Qsub generator commands for `velvetg`:
+B. Run `velveth` on Hydra-3
+	
+- $ `qsub velveth.qsub`	
+
+C. Generate a qsub file for `velvetg` to assemble your data in the directory generated from `velveth`. 
+
+- Qsub generator commands for `velvetg`:
 	
 			export OMP_NUM_THREADS=$NSLOTS 
 			export  MAXKMERLENGTH='51'
 			velvetg ecoli.33
 		
-		-- **Please use all minimum values for memory and CPUs for this job.**
+	-- **Please use all minimum values for memory and CPUs for this job.**
 	
 	- Example Qsub Generator output:
 			
@@ -181,15 +187,11 @@ B. Transfer Qsub generator file to hydra from your local computer. *Hint: you ca
 
 C. Run `velvetg` on Hydra-3
 	
-- $ `qsub velvetg.qsub`	
-
-D. Run `velvetg` on Hydra-3
-	
 - $ `qsub velvetg.qsub`
 	
-E.	Count the number of sequences in your output assembly.
+D.	Count the number of sequences in your output assembly.
 	
-- Navigate to the output directory, `cd ecoli.33` 
+- Navigate to the output directory with the output: `cd ecoli.33` 
 - Assembly output is called `contigs.fa`
 - Count number of sequences; *Hint - use skills from Day 1 PM Practical*
 
