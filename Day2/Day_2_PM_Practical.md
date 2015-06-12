@@ -14,6 +14,7 @@ A. Generate a qsub file to run your data through FastQC
 - Qsub generator (https://hydra-3.si.edu/tools/QSubGen/) commands:
 
 		fastqc sequences.fq
+
 -- **Please use all minimum values for memory and CPUs for this job.**
 	
 - Example Qsub Generator output:
@@ -27,7 +28,7 @@ A. Generate a qsub file to run your data through FastQC
 		#$ -N FastQC
 		#$ -o FastQC.log
 		#$ -m abe
-		#$ -M gonzalez@si.edu
+		#$ -M <username>@si.edu
 		#
 		# ----------------Modules------------------------- #
 		module load bioinformatics/fastqc/0.10.1
@@ -62,7 +63,7 @@ A. Generate a qsub file to run your data through FastQC
 
 -- *Note: Default quality encoding is Phred 33 (Sanger/Illumina 1.9). Please verify that the encoding is correct from the results of FastQC.
 
- **Please use all minimum values for memory and CPUs for this job.**
+-- **Please use all minimum values for memory and CPUs for this job.**
 	
 - Example Qsub Generator output:
 	
@@ -75,7 +76,7 @@ A. Generate a qsub file to run your data through FastQC
 		#$ -N Trimgalore
 		#$ -o Trimgalore.log
 		#$ -m abe
-		#$ -M gonzalez@si.edu
+		#$ -M <username>@si.edu
 		#
 		# ----------------Modules------------------------- #
 		module load bioinformatics/trimgalore/0.4.0
@@ -98,7 +99,7 @@ C. Download output of FastQC run (zip file) to your local computer
 D. Open HTML file and assess results. 
 	
 #####3. Assembly with Velvet - module `bioinformatics/velvet/1.2.10` 
-Velvet (https://www.ebi.ac.uk/~zerbino/velvet/) is a de novo genomic assembler specially designed for short read sequencing technologies. Velvet runs in parallel (OPENMP). The velvet assembler runs in a two set process; by first running `velveth` and then by running `velvetg`. `velveth` helps you construct the dataset for the following program, `velvetg`, and
+Velvet (https://www.ebi.ac.uk/~zerbino/velvet/) is a de novo genomic assembler specially designed for short read sequencing technologies. Velvet runs in parallel (OPENMP: multi-thread). The velvet assembler runs in a two set process; by first running `velveth` and then by running `velvetg`. `velveth` helps you construct the dataset for the following program, `velvetg`, and
 indicate to the system what each sequence file represents. `velvetg` is the core of Velvet where the de Bruijn graph is built then manipulated.
 
 A. Generate a qsub file to assemble your data (sequences.fq) with `velveth`. `velveth` takes in a number of sequence files, produces a hashtable, then outputs two files in an output directory (creating it if necessary), Sequences and Roadmaps, which are necessary to `velvetg`. 
@@ -116,7 +117,7 @@ A. Generate a qsub file to assemble your data (sequences.fq) with `velveth`. `ve
 			# /bin/bash 
 			# ----------------Parameters---------------------- #
 			#$ -S /bin/bash
-			#$ -pe orte 2
+			#$ -pe mthread 2
 			#$ -q sThC.q
 			#$ -l mres=1G
 			#$ -cwd
@@ -124,7 +125,7 @@ A. Generate a qsub file to assemble your data (sequences.fq) with `velveth`. `ve
 			#$ -N velveth_short
 			#$ -o velveth_short.log
 			#$ -m abe
-			#$ -M gonzalez@si.edu
+			#$ -M <username>@si.edu
 			#
 			# ----------------Modules------------------------- #
 			module load bioinformatics/velvet/1.2.10
@@ -159,7 +160,7 @@ C. Generate a qsub file for `velvetg` to assemble your data in the directory gen
 			# /bin/bash 
 			# ----------------Parameters---------------------- #
 			#$ -S /bin/bash
-			#$ -pe orte 2
+			#$ -pe mthread 2
 			#$ -q sThC.q
 			#$ -l mres=1G
 			#$ -cwd
@@ -167,7 +168,7 @@ C. Generate a qsub file for `velvetg` to assemble your data in the directory gen
 			#$ -N velvetg_short
 			#$ -o velvetg_short.log
 			#$ -m abe
-			#$ -M gonzalez@si.edu
+			#$ -M <username>@si.edu
 			#
 			# ----------------Modules------------------------- #
 			module load bioinformatics/velvet/1.2.10
@@ -194,6 +195,22 @@ F. Count the number of sequences in your output assembly.
 - Navigate to the output directory with the output: `cd ecoli.33` 
 - Assembly output is called `contigs.fa`
 - Count number of sequences; *Hint - use skills from Day 1 PM Practical*
+
+
+## For advanved users
+
+#####4. Assembly with Trinity (OPTIONAL - now has trimmomatic included) - module `bioinformatics/trinity/2.0.6`
+
+Trinity (http://trinityrnaseq.github.io/) assembles transcript sequences from Illumina RNA-Seq data. Trinity runs in an OPENMP parallelized environment and required a large amount of memory. Remember to use flags for an parallel environment. *Hint: use mthreads and himem flags*
+	
+A. Generate a qsub file to assemble your data with Trinity. 
+
+- Qsub generator commands:
+
+		Trinity --seqType fq --single sequences.fa --CPU $NSLOTS --max_memory 20G --full_cleanup --output Trinity_sequences			
+B. Run Trinity on Hydra-3
+	
+C.	Count the number of sequences in your output assembly - `Trinity.fasta`
 
 	
 
