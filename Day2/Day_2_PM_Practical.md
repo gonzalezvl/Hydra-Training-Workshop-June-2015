@@ -197,7 +197,7 @@ F. Count the number of sequences in your output assembly.
 - Count number of sequences; *Hint - use skills from Day 1 PM Practical*
 
 
-## For advanved users
+## For advanced users
 
 #####4. Assembly with Trinity (OPTIONAL - now has trimmomatic included) - module `bioinformatics/trinity/2.0.6`
 
