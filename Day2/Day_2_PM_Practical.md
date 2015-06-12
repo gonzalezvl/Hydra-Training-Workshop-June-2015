@@ -201,7 +201,7 @@ F. Count the number of sequences in your output assembly.
 
 #####4. Assembly with Trinity (OPTIONAL - now has trimmomatic included) - module `bioinformatics/trinity/2.0.6`
 
-Trinity (http://trinityrnaseq.github.io/) assembles transcript sequences from Illumina RNA-Seq data. Trinity runs in an OPENMP parallelized environment and requires a large amount of memory. Remember to use flags for an parallel environment. *Hint: use mthreads and himem flags*
+Trinity (http://trinityrnaseq.github.io/) assembles transcript sequences from Illumina RNA-Seq data. Trinity runs in an OPENMP parallelized environment and requires a large amount of memory. Remember to use flags for a parallel environment. *Hint: use mthreads and himem flags*
 	
 A. Generate a qsub file to assemble your data with Trinity. 
 
