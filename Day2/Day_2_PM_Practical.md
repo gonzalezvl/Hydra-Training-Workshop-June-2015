@@ -183,13 +183,13 @@ C. Generate a qsub file for `velvetg` to assemble your data in the directory gen
 			#
 			echo = `date` job $JOB_NAME done
 	
-B. Transfer Qsub generator file to hydra from your local computer. *Hint: you can use `scp` or copy into a new file in `vi`.*
+D. Transfer Qsub generator file to hydra from your local computer. *Hint: you can use `scp` or copy into a new file in `vi`.*
 
-C. Run `velvetg` on Hydra-3
+E. Run `velvetg` on Hydra-3
 	
 - $ `qsub velvetg.qsub`
 	
-D.	Count the number of sequences in your output assembly.
+F. Count the number of sequences in your output assembly.
 	
 - Navigate to the output directory with the output: `cd ecoli.33` 
 - Assembly output is called `contigs.fa`
