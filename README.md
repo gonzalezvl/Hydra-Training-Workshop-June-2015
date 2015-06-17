@@ -29,7 +29,8 @@ Additional Documents:
 ### In Day2
 
 	1. Day 2 AM Slides - Hydra Bioinformatics Skills by Paul Frandsen (June 2015)
-	2. Day 2 PM Slides - Job Monitoring by Rebecca Dikow
-	3. Day 2 PM Practical
+	2. Day 2 AM Practical 
+	3. Day 2 PM Slides - Job Monitoring by Rebecca Dikow
+	4. Day 2 PM Practical
 	
 Smithsonian Hydra Workshop 2015
