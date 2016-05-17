@@ -1,5 +1,5 @@
 ##UPDATE: MAY 16, 2016
-##ALL Current Training documents can be found at `https://github.com/SmithsonianWorkshops/Hydra-workshop`
+##All current training documents can be found at `https://github.com/SmithsonianWorkshops/Hydra-workshop`
 ##Please visit this repository for updated hydra training documents. 
 
 # 🌻Hydra-Training-Workshop-June-2015
